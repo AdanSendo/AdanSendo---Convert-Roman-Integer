@@ -7,23 +7,23 @@ class Num
 		std::vector<int>digits;
 public:	
     Num(std::string n)
-		{
-        int value=0;
-				for(auto& i:n)
-				{
-					  switch(i)
-			      {
-              case 'I': value=1; break;
-              case 'V': value=5; break;
-              case 'X': value=10; break;
-              case 'L': value=50; break;
-              case 'C': value=100; break;
-              case 'D': value=500; break;
-              case 'M': value=10000; break;
-			      }
-          digits.push_back(value);
-		    }
-    }
+	{
+	  int value=0;
+	  for(auto& i:n)
+	  {
+	    switch(i)
+	    {
+		case 'I': value=1; break;
+		case 'V': value=5; break;
+		case 'X': value=10; break;
+		case 'L': value=50; break;
+		case 'C': value=100; break;
+		case 'D': value=500; break;
+		case 'M': value=10000; break;
+	    }
+	    digits.push_back(value);
+	  }
+    	}
     
     bool valid()
     {
